@@ -1,0 +1,6 @@
+1) Modelo minimalista;
+2) Semi-retro;
+3) Acessar: https://html5up.net para inspirações;
+4) Seções: sobre, história, serviços, contatos, calendário (?);
+5) Utilizar Html5 e Css3 (tornar responsivo depois de pronto);
+6) Pegar as imagens posteriormente, usar templates por hora.
