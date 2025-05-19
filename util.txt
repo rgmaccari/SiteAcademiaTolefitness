@@ -4,3 +4,5 @@
 4) Seções: sobre, história, serviços, contatos, calendário (?);
 5) Utilizar Html5 e Css3 (tornar responsivo depois de pronto);
 6) Pegar as imagens posteriormente, usar templates por hora.
+7) Realizar merge dos estilos;
+8) Povoar com lorem ipsum (está começando a ficar confuso)
