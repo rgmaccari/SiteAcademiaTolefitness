@@ -76,6 +76,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -1507,6 +1508,15 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 			margin: 0 0 3.5em 0;
+			height: 250px; /* Altura fixa para uniformizar */
+			overflow: hidden; /* Esconde partes da imagem que excedem a altura */
+		}
+
+		.image.featured img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* Mantém proporção e preenche o container */
+			object-position: center; /* Centraliza a imagem */
 		}
 
 		.image.left {
@@ -1904,14 +1914,15 @@ input, select, textarea {
 	#header {
 		position: relative;
 		position: relative;
-		background: #FFFCF2;
+		background: linear-gradient(135deg, #F5F5DC 0%, #E6E6E6 100%); /* Gradiente suave para melhor contraste */
 		text-align: center;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o header */
 	}
 
 		#header > .container {
 			padding: 14em 0 7em 0;
-			border-bottom: solid 2px #252422;
-			box-shadow: inset 0px -8px 0px 0px #FFFCF2, inset 0px -10px 0px 0px #252422;
+			border-bottom: solid 4px #252422; /* Linha divisora mais espessa */
+			box-shadow: inset 0px -8px 0px 0px rgba(245, 245, 220, 0.8), inset 0px -12px 0px 0px #252422;
 		}
 
 		#header h1 {
@@ -2077,7 +2088,40 @@ input, select, textarea {
 				color: #EB5E28;
 			}
 
-/* Features */
+/* Início - Seção de boas-vindas */
+
+	#inicio {
+		position: relative;
+		overflow: hidden;
+		background: #FFFCF2;
+		text-align: center;
+		padding: 6em 0;
+		border-top: solid 6px #EB5E28; /* Linha divisora destacada em laranja */
+		box-shadow: inset 0px 8px 0px 0px #FFFCF2, inset 0px 14px 0px 0px rgba(235, 94, 40, 0.1);
+	}
+
+		/* Uniformização das imagens na seção inicial */
+		#inicio .image.featured {
+			height: 220px; /* Altura específica para a seção inicial */
+		}
+
+		#inicio .row.aln-center > div {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		#inicio section {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		#inicio section p {
+			flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+		}
+
+/* Features - Renomeado para evitar conflito, mantido para compatibilidade */
 
 	#features {
 		position: relative;
@@ -2153,6 +2197,54 @@ input, select, textarea {
 				transform: scaleX(-1);
 				right: 0;
 			}
+
+/* Seção de Serviços */
+
+	#servicos {
+		position: relative;
+		overflow: hidden;
+		background: #FFFCF2;
+		padding: 6em 0;
+	}
+
+		/* Uniformização das imagens na seção de serviços */
+		#servicos .image.featured {
+			height: 200px; /* Altura específica para a seção de serviços */
+		}
+
+		#servicos .box.post {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		#servicos .box.post p {
+			flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+		}
+
+/* Seção de Eventos */
+
+	#eventos {
+		position: relative;
+		overflow: hidden;
+		background: #FFFCF2;
+		padding: 6em 0;
+	}
+
+		/* Uniformização das imagens na seção de eventos */
+		#eventos .image.featured {
+			height: 180px; /* Altura específica para a seção de eventos */
+		}
+
+		#eventos .box.excerpt {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		#eventos .box.excerpt p {
+			flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+		}
 
 /* Main */
 
@@ -2568,6 +2660,7 @@ input, select, textarea {
 
 			.image.featured {
 				margin: 0 0 1.5em 0;
+				height: 180px; /* Altura reduzida para telas pequenas */
 			}
 
 			.image.left {
@@ -2576,6 +2669,19 @@ input, select, textarea {
 
 			.image.right {
 				max-width: 35%;
+			}
+
+			/* Ajustes responsivos para seções específicas em telas pequenas */
+			#inicio .image.featured {
+				height: 160px;
+			}
+
+			#servicos .image.featured {
+				height: 150px;
+			}
+
+			#eventos .image.featured {
+				height: 140px;
 			}
 
 		/* Button */

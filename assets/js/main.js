@@ -32,6 +32,17 @@
 			hideDelay: 350
 		});
 
+	// Smooth scrolling para links âncora
+		$('a[href^="#"]').on('click', function(e) {
+			var target = $(this.getAttribute('href'));
+			if (target.length) {
+				e.preventDefault();
+				$('html, body').stop().animate({
+					scrollTop: target.offset().top - 100 // Offset para não cobrir o header
+				}, 1000, 'easeInOutCubic');
+			}
+		});
+
 	// Nav.
 
 		// Title Bar.
