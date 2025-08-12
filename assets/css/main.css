@@ -1469,7 +1469,7 @@ input, select, textarea {
 /* Sections/Article */
 
 	section, article {
-		margin-bottom: 3em;
+		margin-bottom: 1.5em;
 	}
 
 	section > :last-child,
@@ -1920,7 +1920,7 @@ input, select, textarea {
 	}
 
 		#header > .container {
-			padding: 14em 0 7em 0;
+			padding: 8em 0 5em 0;
 			border-bottom: solid 4px #252422; /* Linha divisora mais espessa */
 			box-shadow: inset 0px -8px 0px 0px rgba(245, 245, 220, 0.8), inset 0px -12px 0px 0px #252422;
 		}
@@ -2095,14 +2095,15 @@ input, select, textarea {
 		overflow: hidden;
 		background: #FFFCF2;
 		text-align: center;
-		padding: 6em 0;
+		padding: 3em 0;
 		border-top: solid 6px #EB5E28; /* Linha divisora destacada em laranja */
 		box-shadow: inset 0px 8px 0px 0px #FFFCF2, inset 0px 14px 0px 0px rgba(235, 94, 40, 0.1);
 	}
 
 		/* Uniformização das imagens na seção inicial */
 		#inicio .image.featured {
-			height: 220px; /* Altura específica para a seção inicial */
+			height: 180px; /* Altura específica para a seção inicial */
+			margin-bottom: 0.02em;
 		}
 
 		#inicio .row.aln-center > div {
@@ -2112,6 +2113,8 @@ input, select, textarea {
 		}
 
 		#inicio section {
+			margin-top: 0.02em;
+			margin-bottom: 0.02em;
 			display: flex;
 			flex-direction: column;
 			height: 100%;
@@ -2261,7 +2264,7 @@ input, select, textarea {
 	#content > article {
 		border-top: solid 2px #252422;
 		box-shadow: inset 0px 8px 0px 0px #FFFCF2, inset 0px 10px 0px 0px #252422;
-		margin: 5em 0 0 0;
+		margin: 2em 0 0 0;
 		padding: 5em 0 0 0;
 	}
 
@@ -2279,7 +2282,7 @@ input, select, textarea {
 	#sidebar > article {
 		border-top: solid 2px #252422;
 		box-shadow: inset 0px 8px 0px 0px #FFFCF2, inset 0px 10px 0px 0px #252422;
-		margin: 5em 0 0 0;
+		margin: 2em 0 0 0;
 		padding: 5em 0 0 0;
 	}
 
@@ -2298,7 +2301,7 @@ input, select, textarea {
 		overflow: hidden;
 		border-top: solid 2px #252422;
 		background: #403D39;
-		padding: 6em 0 8em 0;
+		padding: 3em 0 4em 0;
 	}
 
 		#footer form input[type="text"],
@@ -2369,7 +2372,7 @@ input, select, textarea {
 		/* Header */
 
 			#header > .container {
-				padding: 12em 0 5em 0;
+				padding: 10em 0 4em 0;
 			}
 
 			#header h1 {
@@ -2385,7 +2388,7 @@ input, select, textarea {
 		/* Features */
 
 			#features {
-				padding: 4em 0;
+				padding: 2em 0;
 			}
 
 		/* Banner */
@@ -2762,14 +2765,14 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 2em 0;
+				padding: 1em 0;
 			}
 
 		/* Content */
 
 			#content > section,
 			#content > article {
-				margin: 3em 0 0 0;
+				margin: 1.5em 0 0 0;
 				padding: 3em 0 0 0;
 			}
 
