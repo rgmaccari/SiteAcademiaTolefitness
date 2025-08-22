@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #252422;
+    color: #FFFCF2;
+	/*background-color: #FFFCF2;
+    color: #403D39;*/
+}
+
+/*
+#FFFCF2 → fundo geral e seções claras -> Branco 
+
+#CCC5B9 → fundos secundários ou cards -> Beje
+
+#403D39 → textos principais -> Cinzinha
+
+#252422 → fundo de nav, header, rodapé -> Pretao
+
+#EB5E28 → destaques, botões, links -> Laranja*/ 
+
+/* Header */
+header {
+    position: relative;
+    background: url('./assets/images/fundo.jpg') no-repeat center/cover;
+    height: 80vh;
+    color: #FFFCF2;
+}
+
+.logo img {
+    width: 500px;
+    height: auto;
+	margin-left: 5rem;
+	margin-top: 5rem;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #252422;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #FFFCF2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #403D39;
+    top: 30px;
+    left: 0;
+    min-width: 150px;
+    z-index: 10;
+}
+
+nav .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #FFFCF2;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    background-color: #403D39;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #EB5E28;
+}
+
+/* Boas-vindas */
+.welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome video {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.welcome p {
+    width: 45%;
+    text-align: justify;
+}
+
+/* Background containers */
+.background-container {
+    background: #CCC5B9;
+    color: #252422;
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Grid de serviços e programas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.grid div {
+    padding: 10px;
+    background-color: #FFFCF2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.grid p {
+	color: #252422;
+}
+
+/* Contato */
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contato input,
+.contato textarea {
+    padding: 10px;
+    border: 1px solid #403D39;
+    border-radius: 5px;
+    background-color: #FFFCF2;
+    color: #252422;
+}
+
+.contato button {
+    padding: 10px;
+    border: none;
+    background: #EB5E28;
+    color: #FFFCF2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contato button:hover {
+    background: #403D39;
+}
+
+/* Map e social */
+.map {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #EB5E28;
+    font-weight: bold;
+}
+
+.social a:hover {
+    color: #403D39;
+}
